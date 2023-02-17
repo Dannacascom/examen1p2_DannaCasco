@@ -1,6 +1,8 @@
 
 package com.mycompany.dannacasco_examen1p2;
 
+import java.util.ArrayList;
+
 public class PC {
     protected String usuario,direccionIp,hostname,mascara;
 
@@ -46,9 +48,18 @@ public class PC {
         this.mascara = mascara;
     }
     
-    public static String ping(int direccionIp){
-        
-    }
+  /* public static String ping(String direccionIp){
+        String ip = "";
+      for (int i = direccionIp.length()-8; i < direccionIp.length(); i++) {
+       int numero = Character.getNumericValue(direccionIp.charAt(i));
+       String binary = decimalToBinary(numero);
+       ip += binary;
+         }
+   }*/
+      
+      
+      
+    
     
     public static String decimalToBinary(int decimal) {
     String binary = "";
